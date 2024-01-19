@@ -1,6 +1,9 @@
 * {
   background-color: #dfe0e2;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .App {
   text-align: center;

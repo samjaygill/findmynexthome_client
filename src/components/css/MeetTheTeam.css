@@ -1,3 +1,12 @@
+.heading{
+    padding: 20px 0 10px 60px;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 0;
+    color: #3c6d7c;
+
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -5,7 +14,7 @@
     justify-items: center;
     justify-content: center;
     padding: 20px 60px;
-    
+    max-width: 100%; 
 }
 
 .card{
