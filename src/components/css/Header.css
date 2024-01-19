@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+
+.header-image{
+    height: 180px;
+    margin: 1% 0;
+
+}

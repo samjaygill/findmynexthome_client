@@ -1,0 +1,20 @@
+.navbar {
+  width: 100%;
+  text-align: center;
+  background-color: #3c6d7c;
+  place-content: center;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.home,
+.forsale,
+.forrent,
+.find,
+.contact {
+  margin: 0 2%;
+  background-color: #3c6d7c;
+  color: #DFE0E2;
+  text-transform: uppercase;
+  text-decoration: none;
+}
