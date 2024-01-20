@@ -7,6 +7,8 @@ import ForRent from "../components/ForRent";
 import FindUs from "../components/FindUs";
 import ContactUs from "../components/ContactUs";
 import MeetTheTeam from "../components/MeetTheTeam";
+import Footer from "../components/Footer";
+import OurBlog from "../components/OurBlog";
 
 function MainContainer() {
   return (
@@ -19,8 +21,9 @@ function MainContainer() {
         <Route path="/find" element={<FindUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/our-team" element={<MeetTheTeam />} />
-
+        <Route path="/blog" element={<OurBlog />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

@@ -1,0 +1,24 @@
+.footer-container {
+  background-color: #3c6d7c;
+  padding: 1%;
+  color: white;
+  padding: 0.5% 5% 0.2% 5%;
+}
+.para-1,
+.para-2,
+.para-3 {
+  background-color: #3c6d7c;
+  margin: 0;
+}
+
+.para-3{
+    text-align: center;
+    font-size: 9px;
+}
+.card-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer2{
+  background-color: #3c6d7c;
+}

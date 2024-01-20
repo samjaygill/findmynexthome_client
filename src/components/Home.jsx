@@ -101,7 +101,7 @@ function Home() {
         <button className="team-button">Meet The Team!</button>
       </Link>
       </div>
-      <hr className="line" />
+      {/* <hr className="line" /> */}
     </>
   );
 }
