@@ -9,18 +9,10 @@ function Footer() {
       <div className="footer-container">
         <div className="card1">
         <div className="footer1">
-          <p className="para1">
-            01563567865
-            <br />
-            0798637990
-            <br />
-            enquiries@meettheteam.com
-          </p>
+        <Link to="/blog" className="para1">Our Blog</Link>
         </div>
         <div className="footer2">
         <p className="para2">
-            <Link to="/blog" className="para2">Our Blog</Link>
-            <br />
             <Link to="/our-team" className="para2">Our Team</Link>
 
           </p>
