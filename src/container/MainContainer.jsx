@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "../components/Header";
 import Home from "../components/Home";
@@ -11,12 +11,36 @@ import Footer from "../components/Footer";
 import OurBlog from "../components/OurBlog";
 
 function MainContainer() {
+  const [properties, setProperties] = useState([]);
+
+  // const addProperty = (submittedProperty) => {
+  //   const updatedProperty = [...properties, submittedProperty];
+  //   setProperties(updatedProperty);
+  // };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/properties");
+        const propertyData = await response.json();
+        setProperties(propertyData);
+        console.log(properties);
+
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+  
+    fetchData();
+  }, []);
+
+
   return (
     <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/sale" element={<ForSale />} />
+        <Route path="/sale" element={<ForSale properties={properties} />} />
         <Route path="/rent" element={<ForRent />} />
         <Route path="/find" element={<FindUs />} />
         <Route path="/contact" element={<ContactUs />} />

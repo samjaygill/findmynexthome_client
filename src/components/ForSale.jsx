@@ -1,9 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-function ForSale() {
+function ForSale({ properties }) {
   return (
-    <div>ForSale</div>
-  )
+    <div className='forsale-container'>
+      {properties.sortedProperties &&
+        properties.sortedProperties.map((property) => (
+          <Link
+            to={`/sale/${property._id}`}
+            className="property-card"
+            key={property._id}
+          >
+            {property.address}
+          </Link>
+        ))}
+    </div>
+  );
 }
 
 export default ForSale
