@@ -6,7 +6,8 @@
   /* width: 30%; */
   background-color: #3c6d7c;
   color: white;
-  flex: 1 20%;
+  flex: 1 15%;
+  padding: 1% 2%;
 }
 .blog-card2{
 display: flex;
@@ -15,7 +16,20 @@ flex: 2 80%;
 margin: 1% 5%;
 }
 .article{
-    border: 1px solid;
+    border: 2px solid #3c6d7c;
     padding: 2.5%;
     margin: 1%;
+  background-color: #9fc5d1;
+
+}
+.search-icon{
+    color: white;
+    border: none;
+    background: none;
+
+}
+.input-search{
+    margin: 0 3%;
+    border: none;
+    background-color: white;
 }
