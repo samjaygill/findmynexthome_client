@@ -14,6 +14,9 @@ function ForSale({ properties }) {
             {property.address}
           </Link>
         ))}
+            For Sale
+
+      
     </div>
   );
 }
