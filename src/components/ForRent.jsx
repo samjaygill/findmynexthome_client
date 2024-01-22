@@ -37,7 +37,8 @@ function ForRent({ properties }) {
         sortBy === "date" ? new Date(parseDate(b[sortBy])) : b[sortBy];
 
       return sortOrder === "asc" ? aValue - bValue : bValue - aValue;
-    });
+    })
+    .reverse();
 
   return (
     <div className="forrent-container">
@@ -59,33 +60,43 @@ function ForRent({ properties }) {
         <div className="property-type">
           <p className="type-title">Property Type:</p>
           <div className="flex-box">
-          <button
+            <button
               onClick={() => handleFilter("Detached")}
-              className={filterType === "Detached" ? "selected-type" : "type-button"}
+              className={
+                filterType === "Detached" ? "selected-type" : "type-button"
+              }
             >
               Detached
             </button>
             <button
               onClick={() => handleFilter("Semi-Detached")}
-              className={filterType === "Semi-Detached" ? "selected-type" : "type-button"}
+              className={
+                filterType === "Semi-Detached" ? "selected-type" : "type-button"
+              }
             >
               Semi-Detached
             </button>
             <button
               onClick={() => handleFilter("Terraced")}
-              className={filterType === "Terraced" ? "selected-type" : "type-button"}
+              className={
+                filterType === "Terraced" ? "selected-type" : "type-button"
+              }
             >
               Terraced
             </button>
             <button
               onClick={() => handleFilter("Bungalow")}
-              className={filterType === "Bungalow" ? "selected-type" : "type-button"}
+              className={
+                filterType === "Bungalow" ? "selected-type" : "type-button"
+              }
             >
               Bungalow
             </button>
             <button
               onClick={() => handleFilter("Flat")}
-              className={filterType === "Flat" ? "selected-type" : "type-button"}
+              className={
+                filterType === "Flat" ? "selected-type" : "type-button"
+              }
             >
               Flat
             </button>
