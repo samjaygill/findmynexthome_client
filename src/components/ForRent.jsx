@@ -1,20 +1,97 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./css/ForRent.css";
 
 function ForRent({ properties }) {
+  const [sortBy, setSortBy] = useState("date");
+  const [sortOrder, setSortOrder] = useState("asc");
+  const [filterType, setFilterType] = useState("all");
+
+  const handleSort = (propertyKey) => {
+    if (sortBy === propertyKey) {
+      setSortOrder((prevOrder) => (prevOrder === "asc" ? "desc" : "asc"));
+    } else {
+      setSortBy(propertyKey);
+      setSortOrder("asc");
+    }
+  };
+
+  const handleFilter = (propertyType) => {
+    setFilterType(propertyType);
+  };
+
+  const sortedAndFilteredProperties = properties
+    .filter((property) => property.type === "rent")
+    .filter(
+      (property) => filterType === "all" || property.property === filterType
+    )
+    .sort((a, b) => {
+      const aValue = sortBy === "date" ? new Date(a[sortBy]) : a[sortBy];
+      const bValue = sortBy === "date" ? new Date(b[sortBy]) : b[sortBy];
+
+      return sortOrder === "asc" ? aValue - bValue : bValue - aValue;
+    });
+
   return (
     <div className="forrent-container">
+            <div className="options">
+        <div className="all">
+          <button onClick={() => handleFilter("all")} className="all-button">
+            Show All
+          </button>
+        </div>
+        <div className="date-price">
+          <p className="sort-title">Sort By:</p>
+          <button onClick={() => handleSort("date")} className="sort-button">
+            Date
+          </button>
+          <button onClick={() => handleSort("price")} className="sort-button">
+            Price
+          </button>
+        </div>
+        <div className="property-type">
+          <p className="type-title">Property Type:</p>
+          <div className="flex-box">
+            <button
+              onClick={() => handleFilter("Detached")}
+              className="type-button"
+            >
+              Detached
+            </button>
+            <button
+              onClick={() => handleFilter("Semi-Detached")}
+              className="type-button"
+            >
+              Semi-Detached
+            </button>
+            <button
+              onClick={() => handleFilter("Terraced")}
+              className="type-button"
+            >
+              Terraced
+            </button>
+            <button
+              onClick={() => handleFilter("Bungalow")}
+              className="type-button"
+            >
+              Bungalow
+            </button>
+            <button
+              onClick={() => handleFilter("Flat")}
+              className="type-button"
+            >
+              Flat
+            </button>
+          </div>
+        </div>
+      </div>
       <div className="forrent-cards">
-        {properties &&
-          properties
-            .filter((property) => property.type === "rent")
-            .map((property) => (
-              <Link
-                to={`/rent/${property.id}`}
-                className="property-card"
-                key={property.id}
-              >
+      {sortedAndFilteredProperties.map((property) => (
+          <Link
+            to={`/sale/${property.id}`}
+            className="property-card"
+            key={property.id}
+          >
                 <img
                   src={property.imageUrls[0]}
                   alt="front of property"

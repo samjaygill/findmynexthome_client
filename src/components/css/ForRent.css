@@ -1,8 +1,12 @@
 .forrent-container {
-  padding: 2.5% 5%;
+  display: flex;
+  min-height: 59vh;
 }
 .forrent-cards {
+  padding: 2.5% 5%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5%;
+  flex: 2 80%;
+  justify-items: center;
 }
