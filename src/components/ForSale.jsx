@@ -19,8 +19,8 @@ function ForSale({ properties }) {
             <img src={property.imageUrls[0]} alt='front of property' className='fs-img-big'/>
             {property.address}<br/>
             {property.property}<br/>
-            <i class="fa">&#xf236;{" "}{property.bedrooms}</i>{" "}
-            {" "}<i class="fa">&#xf2cd;{" "}{property.bathrooms}</i>
+            <i class="fa">&#xf236;{" "}</i>{property.bedrooms}{" "}
+            {" "}<i class="fa">&#xf2cd;{" "}</i>{property.bathrooms}
 
             {/* <img src={property.imageUrls} alt='property'/> */}
           </Link>

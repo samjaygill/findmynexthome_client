@@ -1,24 +1,23 @@
-.forsale-container{
+.forsale-container {
   padding: 2.5% 5%;
 }
-.forsale-cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2.5%;
-
+.forsale-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5%;
 }
-.each-slide{
-    height: 200px;
-    width: 200px;
+.property-card {
+  width: 280px;
+  background-color: white;
+  padding: 5%;
+  box-shadow: 4px 4px rgb(200, 200, 200);
 
-}
-.slide-img{
-    height: 100px;
 }
 .react-slideshow-wrapper.slide {
-    width: 200px;
+  width: 200px;
 }
 
-.fs-img-big{
-width: 300px;
+.fs-img-big {
+  width: 280px;
+  height: 210px;
 }
