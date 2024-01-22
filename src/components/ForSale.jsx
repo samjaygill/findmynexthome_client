@@ -6,6 +6,7 @@ import "./css/ForSale.css";
 function ForSale({ properties }) {
   return (
     <div className="forsale-container">
+      <div className="options"></div>
       <div className="forsale-cards">
         {properties &&
           properties
@@ -32,7 +33,6 @@ function ForSale({ properties }) {
                     £{property.price.toLocaleString("en-GB")}
                   </p>
                 </div>
-                {/* <img src={property.imageUrls} alt='property'/> */}
               </Link>
             ))}
       </div>
