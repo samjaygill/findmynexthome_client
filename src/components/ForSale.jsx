@@ -21,14 +21,21 @@ function ForSale({ properties }) {
     setFilterType(propertyType);
   };
 
+  const parseDate = (dateString) => {
+    const [day, month, year] = dateString.split("/");
+    return `${month}/${day}/${year}`;
+  };
+
   const sortedAndFilteredProperties = properties
     .filter((property) => property.type === "sale")
     .filter(
       (property) => filterType === "all" || property.property === filterType
     )
     .sort((a, b) => {
-      const aValue = sortBy === "date" ? new Date(a[sortBy]) : a[sortBy];
-      const bValue = sortBy === "date" ? new Date(b[sortBy]) : b[sortBy];
+      const aValue =
+        sortBy === "date" ? new Date(parseDate(a[sortBy])) : a[sortBy];
+      const bValue =
+        sortBy === "date" ? new Date(parseDate(b[sortBy])) : b[sortBy];
 
       return sortOrder === "asc" ? aValue - bValue : bValue - aValue;
     });
