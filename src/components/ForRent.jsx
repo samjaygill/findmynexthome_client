@@ -20,13 +20,13 @@ function ForRent({ properties }) {
                   alt="front of property"
                   className="fs-img-big"
                 />
-                {property.address}
-                <br />
+                <div className="property-details">
+                <h5 className="property-title">{property.address}</h5>
                 {property.property}
                 <br />
-                <i class="fa">&#xf236; </i>
-                {property.bedrooms} <i class="fa">&#xf2cd; </i>
-                {property.bathrooms}
+                <i className="fa">&#xf236; </i>
+                {" "}{property.bedrooms} <i className="fa">&#xf2cd; </i>
+                {" "}{property.bathrooms}</div>
                 {/* <img src={property.imageUrls} alt='property'/> */}
               </Link>
             ))}

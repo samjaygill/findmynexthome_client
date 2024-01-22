@@ -11,7 +11,8 @@
   background-color: white;
   padding: 5%;
   box-shadow: 4px 4px rgb(200, 200, 200);
-
+  text-decoration: none;
+  color: black;
 }
 .react-slideshow-wrapper.slide {
   width: 200px;
@@ -20,4 +21,17 @@
 .fs-img-big {
   width: 280px;
   height: 210px;
+  background-color: white;
+}
+.property-title {
+  text-transform: uppercase;
+  background-color: white;
+  font-size: 15px;
+}
+.property-details {
+  background-color: white;
+  font-size: 13px;
+}
+.fa{
+    background-color: white;
 }
