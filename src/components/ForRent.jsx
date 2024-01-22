@@ -106,7 +106,7 @@ function ForRent({ properties }) {
       <div className="forrent-cards">
         {sortedAndFilteredProperties.map((property) => (
           <Link
-            to={`/sale/${property.id}`}
+            to={`/rent/${property.id}`}
             className="property-card"
             key={property.id}
           >
@@ -117,6 +117,7 @@ function ForRent({ properties }) {
             />
             <div className="property-details">
               <h5 className="property-title">{property.address}</h5>
+              <h6 className="property-town">{property.town}</h6>
               {property.property}
               <br />
               <i className="fa">&#xf236; </i> {property.bedrooms}{" "}
