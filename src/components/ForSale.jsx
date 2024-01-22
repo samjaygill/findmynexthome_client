@@ -38,7 +38,7 @@ function ForSale({ properties }) {
         sortBy === "date" ? new Date(parseDate(b[sortBy])) : b[sortBy];
 
       return sortOrder === "asc" ? aValue - bValue : bValue - aValue;
-    });
+    }).reverse();
 
   return (
     <div className="forsale-container">
