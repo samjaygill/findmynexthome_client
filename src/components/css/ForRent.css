@@ -1,0 +1,8 @@
+.forrent-container {
+  padding: 2.5% 5%;
+}
+.forrent-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5%;
+}

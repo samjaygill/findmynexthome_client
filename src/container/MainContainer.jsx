@@ -31,14 +31,13 @@ function MainContainer() {
     fetchData();
   }, []);
 
-
   return (
     <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sale" element={<ForSale properties={properties} />} />
-        <Route path="/rent" element={<ForRent />} />
+        <Route path="/rent" element={<ForRent properties={properties} />} />
         <Route path="/find" element={<FindUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/our-team" element={<MeetTheTeam />} />
