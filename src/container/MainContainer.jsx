@@ -21,16 +21,13 @@ function MainContainer() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/properties");
+        const response = await fetch("http://localhost:8080/properties");
         const propertyData = await response.json();
         setProperties(propertyData);
-        console.log(properties);
-
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
-  
     fetchData();
   }, []);
 

@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 function ForSale({ properties }) {
   return (
     <div className='forsale-container'>
-      {properties.sortedProperties &&
-        properties.sortedProperties.map((property) => (
+      {properties &&
+        properties.map((property) => (
           <Link
-            to={`/sale/${property._id}`}
+            to={`/sale/${property.id}`}
             className="property-card"
-            key={property._id}
+            key={property.id}
           >
             {property.address}
           </Link>
