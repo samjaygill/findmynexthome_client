@@ -1,10 +1,11 @@
 .forsale-container {
   display: flex;
+  min-height: 59vh;
 }
-.options{
-    flex: 1 20%;
+.options {
+  flex: 1 20%;
   background-color: #3c6d7c;
-
+  text-align: center;
 }
 .forsale-cards {
   padding: 2.5% 5%;
@@ -13,7 +14,6 @@
   gap: 2.5%;
   flex: 2 80%;
   justify-items: center;
-  align-items: center;
 }
 .property-card {
   width: 280px;
@@ -22,6 +22,7 @@
   box-shadow: 4px 4px rgb(200, 200, 200);
   text-decoration: none;
   color: black;
+  max-height: 300px;
 }
 .react-slideshow-wrapper.slide {
   width: 200px;
@@ -41,19 +42,55 @@
   background-color: white;
   font-size: 13px;
 }
-.fa{
-    background-color: white;
+.fa {
+  background-color: white;
 }
-.price{
-    position: absolute right;
-    text-align: end;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: white;
+.price {
+  position: absolute right;
+  text-align: end;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
 }
-.date{
-    background-color: white;
-    font-size: 10px;
-    position: absolute right;
-    text-align: end;
+.date {
+  background-color: white;
+  font-size: 10px;
+  position: absolute right;
+  text-align: end;
+}
+.all, .date-price, .property-type {
+  background-color: #3c6d7c;
+  margin: 2.5%;
+  padding-bottom: 5%;
+}
+.all-button {
+  background-color: #dfe0e2;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 2.5%;
+  padding: 2.5% 5%;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #3c6d7c;
+  border: 2px solid #9fc5d1;
+}
+.sort-button, .type-button{
+  background-color: #dfe0e2;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2.5%;
+  padding: 1.75% 2.5%;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #3c6d7c;
+  border: 2px solid #9fc5d1;
+}
+.sort-title, .type-title, .flex-box{
+  background-color: #3c6d7c;
+color: #dfe0e2;
+padding: 1%;
+}
+.flex-box{
+  display: flex;
+  flex-direction: column ;
 }
