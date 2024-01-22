@@ -35,3 +35,10 @@
 .fa{
     background-color: white;
 }
+.price{
+    position: absolute right;
+    text-align: end;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+}

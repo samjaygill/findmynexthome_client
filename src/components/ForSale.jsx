@@ -27,7 +27,9 @@ function ForSale({ properties }) {
                 <br />
                 <i className="fa">&#xf236; </i>
                 {" "}{property.bedrooms} <i className="fa">&#xf2cd; </i>
-                {" "}{property.bathrooms}</div>
+                {" "}{property.bathrooms}
+                <p className="price">£{property.price.toLocaleString('en-GB')}</p>
+                </div>
                 {/* <img src={property.imageUrls} alt='property'/> */}
               </Link>
             ))}
