@@ -49,7 +49,7 @@ function ForRent({ properties }) {
         </div>
         <div className="date-price">
           <p className="sort-title">Sort By:</p>
-          <button onClick={() => handleSort("date")} className="sort-button">
+          <button onClick={() => handleSort("date")} className={sortBy === "date" ? "selected-sort" : "sort-button"}>
             Date
           </button>
           <button onClick={() => handleSort("price")} className="sort-button">

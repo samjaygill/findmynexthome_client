@@ -62,31 +62,31 @@ function ForSale({ properties }) {
           <div className="flex-box">
             <button
               onClick={() => handleFilter("Detached")}
-              className="type-button"
+              className={filterType === "Detached" ? "selected-type" : "type-button"}
             >
               Detached
             </button>
             <button
               onClick={() => handleFilter("Semi-Detached")}
-              className="type-button"
+              className={filterType === "Semi-Detached" ? "selected-type" : "type-button"}
             >
               Semi-Detached
             </button>
             <button
               onClick={() => handleFilter("Terraced")}
-              className="type-button"
+              className={filterType === "Terraced" ? "selected-type" : "type-button"}
             >
               Terraced
             </button>
             <button
               onClick={() => handleFilter("Bungalow")}
-              className="type-button"
+              className={filterType === "Bungalow" ? "selected-type" : "type-button"}
             >
               Bungalow
             </button>
             <button
               onClick={() => handleFilter("Flat")}
-              className="type-button"
+              className={filterType === "Flat" ? "selected-type" : "type-button"}
             >
               Flat
             </button>

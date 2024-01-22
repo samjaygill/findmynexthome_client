@@ -1,6 +1,6 @@
 .forsale-container {
   display: flex;
-  min-height: 59vh;
+  min-height: 60vh;
 }
 .options {
   flex: 1 20%;
@@ -84,6 +84,17 @@
   border-radius: 5px;
   color: #3c6d7c;
   border: 2px solid #9fc5d1;
+}
+.selected-type{
+  background-color: #dfe0e2;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2.5%;
+  padding: 1.75% 2.5%;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #284953;
+  border: 3px solid #284953;
 }
 .sort-title, .type-title, .flex-box{
   background-color: #3c6d7c;
