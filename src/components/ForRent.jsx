@@ -15,8 +15,11 @@ function ForRent({ properties }) {
                 className="property-card"
                 key={property.id}
               >
-                {property.address}
-                {/* <img src={property.imageUrls} alt='property'/> */}
+            <img src={property.imageUrls[0]} alt='front of property' className='fs-img-big'/>
+            {property.address}<br/>
+            {property.property}<br/>
+            <i class="fa">&#xf236;{" "}{property.bedrooms}</i>{" "}
+            {" "}<i class="fa">&#xf2cd;{" "}{property.bathrooms}</i>
               </Link>
             ))}
       </div>

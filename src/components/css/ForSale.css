@@ -5,5 +5,20 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5%;
-    
+
+}
+.each-slide{
+    height: 200px;
+    width: 200px;
+
+}
+.slide-img{
+    height: 100px;
+}
+.react-slideshow-wrapper.slide {
+    width: 200px;
+}
+
+.fs-img-big{
+width: 300px;
 }

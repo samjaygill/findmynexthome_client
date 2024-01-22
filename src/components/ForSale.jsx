@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.css';
 import "./css/ForSale.css"
 
 function ForSale({ properties }) {
@@ -15,7 +16,12 @@ function ForSale({ properties }) {
             className="property-card"
             key={property.id}
           >
-            {property.address}
+            <img src={property.imageUrls[0]} alt='front of property' className='fs-img-big'/>
+            {property.address}<br/>
+            {property.property}<br/>
+            <i class="fa">&#xf236;{" "}{property.bedrooms}</i>{" "}
+            {" "}<i class="fa">&#xf2cd;{" "}{property.bathrooms}</i>
+
             {/* <img src={property.imageUrls} alt='property'/> */}
           </Link>
         ))}
