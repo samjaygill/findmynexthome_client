@@ -49,7 +49,7 @@ function ForRent({ properties }) {
         </div>
         <div className="date-price">
           <p className="sort-title">Sort By:</p>
-          <button onClick={() => handleSort("date")} className={sortBy === "date" ? "selected-sort" : "sort-button"}>
+          <button onClick={() => handleSort("date")} className="sort-button">
             Date
           </button>
           <button onClick={() => handleSort("price")} className="sort-button">
@@ -59,33 +59,33 @@ function ForRent({ properties }) {
         <div className="property-type">
           <p className="type-title">Property Type:</p>
           <div className="flex-box">
-            <button
+          <button
               onClick={() => handleFilter("Detached")}
-              className="type-button"
+              className={filterType === "Detached" ? "selected-type" : "type-button"}
             >
               Detached
             </button>
             <button
               onClick={() => handleFilter("Semi-Detached")}
-              className="type-button"
+              className={filterType === "Semi-Detached" ? "selected-type" : "type-button"}
             >
               Semi-Detached
             </button>
             <button
               onClick={() => handleFilter("Terraced")}
-              className="type-button"
+              className={filterType === "Terraced" ? "selected-type" : "type-button"}
             >
               Terraced
             </button>
             <button
               onClick={() => handleFilter("Bungalow")}
-              className="type-button"
+              className={filterType === "Bungalow" ? "selected-type" : "type-button"}
             >
               Bungalow
             </button>
             <button
               onClick={() => handleFilter("Flat")}
-              className="type-button"
+              className={filterType === "Flat" ? "selected-type" : "type-button"}
             >
               Flat
             </button>
