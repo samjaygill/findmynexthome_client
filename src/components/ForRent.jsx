@@ -21,12 +21,17 @@ function ForRent({ properties }) {
                   className="fs-img-big"
                 />
                 <div className="property-details">
-                <h5 className="property-title">{property.address}</h5>
-                {property.property}
-                <br />
-                <i className="fa">&#xf236; </i>
-                {" "}{property.bedrooms} <i className="fa">&#xf2cd; </i>
-                {" "}{property.bathrooms}</div>
+                  <h5 className="property-title">{property.address}</h5>
+                  {property.property}
+                  <br />
+                  <i className="fa">&#xf236; </i> {property.bedrooms}{" "}
+                  <i className="fa">&#xf2cd; </i> {property.bathrooms}
+                  <p className="date">added on {property.date}</p>
+                  <p className="price">
+                    £{property.price.toLocaleString("en-GB")} p/m
+                  </p>
+                </div>
+
                 {/* <img src={property.imageUrls} alt='property'/> */}
               </Link>
             ))}
