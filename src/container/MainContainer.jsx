@@ -9,6 +9,7 @@ import ContactUs from "../components/ContactUs";
 import MeetTheTeam from "../components/MeetTheTeam";
 import Footer from "../components/Footer";
 import OurBlog from "../components/OurBlog";
+import PropertyCard from "../components/PropertyCard";
 
 function MainContainer() {
   const [properties, setProperties] = useState([]);
@@ -37,7 +38,9 @@ function MainContainer() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sale" element={<ForSale properties={properties} />} />
+        <Route path="/sale/:id" element={<PropertyCard properties={properties}/> } />
         <Route path="/rent" element={<ForRent properties={properties} />} />
+        <Route path="/rent/:id" element={<PropertyCard properties={properties}/>} />
         <Route path="/find" element={<FindUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/our-team" element={<MeetTheTeam />} />
