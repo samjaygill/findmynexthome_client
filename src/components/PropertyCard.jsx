@@ -29,13 +29,15 @@ function PropertyCard({ properties }) {
           <h3 className="pc-heading">
             {property.address}, {property.town}
           </h3>
-          <p>
-            {property.property}<br/>
-            <i className="fa">&#xf236; </i> {property.bedrooms}{" "}
-            <i className="fa">&#xf2cd; </i> {property.bathrooms}<br/>
+          <div className="pc-details">
+            <p className="bath-bed"><i className="fa">&#xf236; </i> {property.bedrooms}{" "}
+            <i className="fa">&#xf2cd; </i> {property.bathrooms}</p>
+            <p className="pc-type">{property.property}</p>
+
+            </div>
             {property.description}
 
-          </p>
+          
         </div>
       </div>
     </div>

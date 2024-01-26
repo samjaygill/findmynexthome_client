@@ -28,8 +28,15 @@
 }
 .pc-photos,
 .pc-info,
-.pc-image {
+.pc-image,
+.pc-heading,
+.pc-details,
+.bath-bed,
+.pc-type {
   background-color: white;
+}
+.pc-heading{
+    font-size: 27px;
 }
 .pc-photos {
   flex: 1 60%;
