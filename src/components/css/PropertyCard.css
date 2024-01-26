@@ -37,6 +37,18 @@
 }
 .pc-heading{
     font-size: 27px;
+    padding: 2.5% 0;
+}
+.pc-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 0 0 2.5% 0;
+
+}
+.pc-type{
+    text-align: end;
+    margin-right: 2.5%;
 }
 .pc-photos {
   flex: 1 60%;
