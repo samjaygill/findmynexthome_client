@@ -7,25 +7,24 @@
   text-align: end;
   padding-right: 5%;
 }
-.enquire-button{
-    background-color: #3c6d7c;
-    padding: 0.5% 1%;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: bold;
-
+.enquire-button {
+  background-color: #3c6d7c;
+  padding: 0.5% 1%;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: bold;
 }
 .pc-card {
   margin: 0.5% 5%;
-  padding: 2.5% 5%;
+  padding: 0.5% 0.5%;
   background-color: white;
   display: flex;
   margin-bottom: 2.5%;
 }
-.pc-image{
-    max-width: 90%;
-    padding: 5%;
+.pc-image {
+  max-width: 90%;
+  /* padding: 5%; */
 }
 .pc-photos,
 .pc-info,
@@ -35,6 +34,7 @@
 .pc-photos {
   flex: 1 60%;
   max-width: 60%;
+  text-align: center;
 }
 .pc-info {
   flex: 2 40%;
