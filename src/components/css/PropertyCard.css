@@ -25,6 +25,7 @@
 }
 .pc-image {
   height: 100%;
+  max-width: 95%;
   /* padding: 5%; */
 }
 .pc-photos,
@@ -53,7 +54,6 @@
 }
 .pc-photos {
   flex: 1 50%;
-  max-width: 100%;
   /* padding: 2.5% 0; */
 }
 .pc-info {
