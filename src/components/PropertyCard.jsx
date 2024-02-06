@@ -34,7 +34,6 @@ function PropertyCard({ properties }) {
       </div>
       <div className="pc-card">
         <div className="pc-photos">
-          {/* Current Image */}
           <button className="nav-button left" onClick={navigateToPreviousImage}>
             &lt;
           </button>
@@ -43,7 +42,6 @@ function PropertyCard({ properties }) {
             alt={`property-${currentImageIndex}`}
             className="pc-image"
           />
-          {/* Navigation Buttons */}
 
           <button className="nav-button right" onClick={navigateToNextImage}>
             &gt;
