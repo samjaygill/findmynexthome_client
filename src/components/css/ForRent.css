@@ -3,7 +3,7 @@
   min-height: 59vh;
 }
 .forrent-cards {
-  padding: 2.5% 5%;
+  padding: 2.5% 5% 5% 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5%;
