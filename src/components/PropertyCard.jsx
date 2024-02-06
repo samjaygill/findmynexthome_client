@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./css/PropertyCard.css";
 
@@ -7,6 +7,21 @@ function PropertyCard({ properties }) {
   const property = properties.find(
     (property) => property.id === parseInt(id, 10)
   );
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const navigateToPreviousImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? property.imageUrls.length - 1 : prevIndex - 1
+    );
+  };
+
+  const navigateToNextImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === property.imageUrls.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
 
   if (!property) {
     return <div>No property found for the provided ID</div>;
@@ -19,11 +34,20 @@ function PropertyCard({ properties }) {
       </div>
       <div className="pc-card">
         <div className="pc-photos">
+          {/* Current Image */}
+          <button className="nav-button left" onClick={navigateToPreviousImage}>
+            &lt;
+          </button>
           <img
-            src={property.imageUrls[0]}
-            alt="property"
+            src={property.imageUrls[currentImageIndex]}
+            alt={`property-${currentImageIndex}`}
             className="pc-image"
           />
+          {/* Navigation Buttons */}
+
+          <button className="nav-button right" onClick={navigateToNextImage}>
+            &gt;
+          </button>
         </div>
         <div className="pc-info">
           <h3 className="pc-heading">
