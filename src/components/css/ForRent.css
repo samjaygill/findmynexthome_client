@@ -1,6 +1,8 @@
 .forrent-container {
   display: flex;
   min-height: 58vh;
+  background-color: #dfe0e2;
+
 }
 .forrent-cards {
   padding: 2.5% 5% 5% 5%;
