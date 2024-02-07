@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   padding: 2.5% 5%;
+  background-color: #dfe0e2;
 }
 
 .home-img {
@@ -14,6 +15,7 @@
   color: #071013;
   text-transform: none;
   padding-right: 5%;
+
 }
 .home-title {
   text-transform: uppercase;
@@ -32,20 +34,24 @@
   text-transform: uppercase;
   margin: 20px 0 0 0;
   color: #3c6d7c;
+
 }
 
 .line {
   height: 0.25px;
   background-color: #3c6d7c;
+
 }
 
 .choose-title {
-  margin-top: 2.5%;
-  margin-bottom: 1%;
+  padding-top: 2.5%;
+  padding-bottom: 1%;
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
   color: #3c6d7c;
+  background-color: #dfe0e2;
+
 }
 
 .choose-us {
@@ -54,6 +60,8 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   padding-bottom: 1%;
+  background-color: #dfe0e2;
+
 }
 .why-us {
   background-color: #9fc5d1;
@@ -77,6 +85,8 @@
 
 .button-div {
   text-align: center;
+  background-color: #dfe0e2;
+
 }
 .team-button {
   margin-bottom: 2.5%;
