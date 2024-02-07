@@ -1,6 +1,8 @@
 .forsale-container {
   display: flex;
   min-height: 58vh;
+  background-color: #dfe0e2;
+
 }
 .options {
   flex: 1 20%;
