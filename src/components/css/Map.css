@@ -1,0 +1,10 @@
+.maps {
+    height: 60vh;
+    width: auto;
+    padding: 5%;
+  }
+
+.map-container {
+    height: 100%;
+    width: 100%;
+  }
