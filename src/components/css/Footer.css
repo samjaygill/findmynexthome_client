@@ -43,3 +43,8 @@ svg {
 .scroll-to-top {
   box-shadow: 1px 1px rgb(155, 155, 155) !important;
 }
+@media (max-width: 770px) {
+  .footer1, .footer2{
+    font-size: 13px;
+  }
+}
