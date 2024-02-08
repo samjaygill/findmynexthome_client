@@ -23,9 +23,9 @@ function OurBlog({ handleSearch, blogs }) {
         />
       </div>
       <div className="blog-card2">
-        <div className="article">
+        <div >
           {blogs.map((blog) => (
-            <div key={blog.id}>
+            <div key={blog.id} className="article">
               <h2>{blog.title}</h2>
               <p>{blog.body}</p>
             </div>
