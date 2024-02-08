@@ -21,7 +21,7 @@ overflow: scroll;
 }
 .article{
     border: 2px solid #3c6d7c;
-    padding: 2.5%;
+    padding: 1.5% 2.5%;
     margin: 1%;
   background-color: #9fc5d1;
 
@@ -36,4 +36,11 @@ overflow: scroll;
     margin: 0 3%;
     border: none;
     background-color: white;
+}
+
+.blog-title{
+  font-size: 20px;
+}
+.blog-body{
+  font-size: 15px;
 }
