@@ -10,3 +10,18 @@
   height: 180px;
   margin: 1% 0;
 }
+@media (max-width: 770px) {
+  .header-image {
+    height: 150px;
+  }
+}
+@media (max-width: 468px) {
+  .header-image {
+    height: 140px;
+  }
+}
+@media (max-width: 404px) {
+  .header-image {
+    height: 120px;
+  }
+}
