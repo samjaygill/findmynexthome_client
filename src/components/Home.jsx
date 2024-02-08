@@ -34,7 +34,7 @@ function Home() {
           </p>
           <p className="closing-intro">Your dream home is just a click away!</p>
         </div>
-        <div>
+        <div className="img-div">
           <img
             src="https://i.ibb.co/GvJRSWx/Screenshot-2024-01-19-at-19-54-37.png"
             alt="house"

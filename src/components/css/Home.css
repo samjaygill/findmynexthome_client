@@ -19,7 +19,7 @@
 .home-title {
   text-transform: uppercase;
   font-size: 22px;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
   color: #3c6d7c;
 }
 .home-paragraph {
@@ -31,7 +31,7 @@
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 20px 0 0 0;
+  margin-top: 20px;
   color: #3c6d7c;
 }
 
@@ -97,4 +97,57 @@
 .team-button:hover {
   background-color: #9fc5d1;
   color: #3c6d7c;
+}
+@media (max-width: 770px) {
+  .home-container {
+    padding: 2.5%;
+  }
+  .home-img {
+    height: 250px;
+  }
+  .intro{
+    padding-right: 1%;
+  }
+  .home-title, .closing-intro, .choose-title{
+    font-size: 17px;
+  }
+  .home-paragraph{
+    font-size: 14px;
+  }
+  .home-title{
+    margin-bottom: 10px;
+  }
+  .closing-intro{
+    margin-top: 10px;
+  }
+  .img-div{
+    align-self: center;
+  }
+  .choose-us{
+    padding: 0.5% 2.5%;
+  }
+  .why-us{
+    margin: 0;
+    padding: 15px;
+  }
+  .why-title{
+    font-size: 13px;
+  }
+  .why-para{
+    font-size: 12px;
+  }
+  .team-button{
+    margin-top: 1%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 404px) {
+  .navbar {
+    font-size: 12px;
+  }
+}
+@media (max-width: 350px) {
+  .navbar {
+    font-size: 10px;
+  }
 }
