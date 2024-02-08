@@ -5,6 +5,7 @@
   place-content: center;
   padding: 1%;
   margin-bottom: 1;
+  font-size: 17px;
 }
 
 .home,
@@ -17,4 +18,20 @@
   color: #dfe0e2;
   text-transform: uppercase;
   text-decoration: none;
+}
+@media (max-width: 468px) {
+  .navbar {
+    font-size: 14px;
+    padding: 2%;
+  }
+}
+@media (max-width: 404px) {
+  .navbar {
+    font-size: 12px;
+  }
+}
+@media (max-width: 350px) {
+  .navbar {
+    font-size: 10px;
+  }
 }
