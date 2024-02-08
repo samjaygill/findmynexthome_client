@@ -14,6 +14,7 @@ import PropertyCard from "../components/PropertyCard";
 function MainContainer() {
   const [properties, setProperties] = useState([]);
   const [blogs, setBlogs] = useState([]);
+  const [filteredResults, setFilteredResults] = useState([]);
 
   // const addProperty = (submittedProperty) => {
   //   const updatedProperty = [...properties, submittedProperty];
@@ -46,19 +47,46 @@ function MainContainer() {
     fetchData();
   }, []);
 
+  const handleSearch = (input) => {
+    const results = blogs.filter((blog) => {
+      const lowerInput = input.toLowerCase();
+
+      return (
+        blog.title.toLowerCase().includes(lowerInput) ||
+        blog.body.toLowerCase().includes(lowerInput)
+      );
+    });
+
+    setFilteredResults(results);
+  };
+
   return (
     <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sale" element={<ForSale properties={properties} />} />
-        <Route path="/sale/:id" element={<PropertyCard properties={properties}/> } />
+        <Route
+          path="/sale/:id"
+          element={<PropertyCard properties={properties} />}
+        />
         <Route path="/rent" element={<ForRent properties={properties} />} />
-        <Route path="/rent/:id" element={<PropertyCard properties={properties}/>} />
+        <Route
+          path="/rent/:id"
+          element={<PropertyCard properties={properties} />}
+        />
         <Route path="/find" element={<FindUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/our-team" element={<MeetTheTeam />} />
-        <Route path="/blog" element={<OurBlog blogs={blogs}/>} />
+        <Route
+          path="/blog"
+          element={
+            <OurBlog
+              blogs={filteredResults.length ? filteredResults : blogs}
+              handleSearch={handleSearch}
+            />
+          }
+        />
       </Routes>
       <Footer />
     </Router>
