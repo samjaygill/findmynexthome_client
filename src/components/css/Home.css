@@ -141,6 +141,34 @@
     font-size: 15px;
   }
 }
+@media (max-width: 555px) {
+  .home-container {
+    flex-direction: column-reverse;
+    padding: 2.5%;
+  }
+  .home-img{
+    height: 150px;
+  }
+  .img-div{
+    align-self: end;
+    padding-bottom: 2.5%;
+  }
+  .home-title, .closing-intro, .choose-title{
+    font-size: 15px;
+  }
+  .home-paragraph, .team-button{
+    font-size: 13px;
+  }
+  .why-us{
+    padding: 10px;
+  }
+  .why-title{
+    font-size: 11px;
+  }
+  .why-para{
+    font-size: 10px;
+  }
+}
 @media (max-width: 404px) {
   .navbar {
     font-size: 12px;
