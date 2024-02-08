@@ -110,5 +110,34 @@
   font-size: 13px;
 }
 }
-@media (max-width: 350px) {
+@media (max-width: 530px) {
+  .pc-card{
+    margin: 0.5% 5%;
+  }
+  .enquire{
+    padding-right: 5%;
+  }
+  .pc-image {
+    width: 330px;
+    height: 210px;
+}
+}
+@media (max-width: 437px) {
+  .pc-card{
+    margin: 0.5% 2.5%;
+    padding: 2.5%;
+  }
+  .enquire{
+    padding-right: 2.5%;
+  }
+  .pc-image {
+    width: 300px;
+    height: 180px;
+}
+}
+@media (max-width: 379px) {
+  .pc-image {
+    width: 280px;
+    height: 160px;
+}
 }
