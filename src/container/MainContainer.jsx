@@ -13,6 +13,7 @@ import PropertyCard from "../components/PropertyCard";
 
 function MainContainer() {
   const [properties, setProperties] = useState([]);
+  const [blogs, setBlogs] = useState([]);
 
   // const addProperty = (submittedProperty) => {
   //   const updatedProperty = [...properties, submittedProperty];
@@ -32,6 +33,19 @@ function MainContainer() {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:8080/blogs");
+        const blogData = await response.json();
+        setBlogs(blogData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <Router>
       <Header />
@@ -44,7 +58,7 @@ function MainContainer() {
         <Route path="/find" element={<FindUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/our-team" element={<MeetTheTeam />} />
-        <Route path="/blog" element={<OurBlog />} />
+        <Route path="/blog" element={<OurBlog blogs={blogs}/>} />
       </Routes>
       <Footer />
     </Router>

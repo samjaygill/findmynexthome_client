@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import "./css/OurBlog.css";
 
-function OurBlog({handleSearch}) {
-
+function OurBlog({ handleSearch, blogs }) {
   const [input, setInput] = useState("");
 
   const handleChange = (input) => {
@@ -24,11 +23,19 @@ function OurBlog({handleSearch}) {
         />
       </div>
       <div className="blog-card2">
-        <div className="article">One</div>
+        <div className="article">
+          {blogs.map((blog) => (
+            <div key={blog.id}>
+              <h2>{blog.title}</h2>
+              <p>{blog.body}</p>
+            </div>
+          ))}
+        </div>
+        {/* <div className="article">One</div>
         <div className="article">Two</div>
         <div className="article">Three</div>
         <div className="article">Four</div>
-        <div className="article">Five</div>
+        <div className="article">Five</div> */}
       </div>
     </div>
   );
