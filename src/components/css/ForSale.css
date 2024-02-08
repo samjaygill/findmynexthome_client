@@ -214,5 +214,13 @@
     font-size: 10px;
   }
 }
+@media (max-width: 389px) {
+    .property-card {
+      width: 115px;
+    }
+    .fs-img-big {
+      height: 90px;
+    }
+  }
 
 

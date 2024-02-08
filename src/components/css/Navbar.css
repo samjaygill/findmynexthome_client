@@ -23,6 +23,7 @@
   .navbar {
     font-size: 14px;
     padding: 2%;
+    width: 96%;
   }
 }
 @media (max-width: 404px) {

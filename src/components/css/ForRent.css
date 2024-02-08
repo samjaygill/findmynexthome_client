@@ -12,9 +12,22 @@
   justify-items: center;
 }
 
+
 @media (max-width: 1300px) {
   .forrent-cards {
     padding: 2% 2.5% 2.5% 2.5%;
     gap: 2%;
   }
+}
+@media (max-width: 660px) {
+  .forrent-cards{
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 510px) {
+  .forrent-cards{
+    grid-template-columns: repeat(2, 1fr);
+    flex: 2 75%;
+    margin-bottom: 6%;
+    }
 }
