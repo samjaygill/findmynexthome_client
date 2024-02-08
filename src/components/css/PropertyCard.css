@@ -70,3 +70,45 @@
   flex: 2 50%;
   padding: 2%;
 }
+
+
+@media (max-width: 1205px) {
+  .pc-photos {
+    flex: 1 65%;
+    padding: 1%;
+  }
+  .pc-info {
+    flex: 2 35%;
+    padding: 1%;
+  }
+}
+@media (max-width: 1112px) {
+  .pc-image{
+    width: 380px;
+    height: 260px;
+  }
+}
+@media (max-width: 875px) {
+  .pc-container {
+    min-height: 75vh;
+}
+  .pc-card {
+    flex-direction: column;
+  }
+  .pc-photos{
+    text-align: center;
+  }
+  .pc-image {
+    width: 360px;
+    height: 240px;
+}
+.pc-heading{
+  font-size: 20px;
+  padding: 1% 0;
+}
+.pc-info{
+  font-size: 13px;
+}
+}
+@media (max-width: 350px) {
+}
