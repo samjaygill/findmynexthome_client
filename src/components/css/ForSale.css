@@ -31,7 +31,7 @@
 }
 
 .fs-img-big {
-  width: 280px;
+  width: 100%;
   height: 210px;
   background-color: white;
 }
@@ -124,3 +124,95 @@
     gap: 2%;
   }
 }
+@media (max-width: 1222px) {
+  .property-card {
+    width: 250px;
+  }
+  .fs-img-big {
+    height: 200px;
+  }
+}
+@media (max-width: 1105px) {
+  .property-card {
+    width: 225px;
+  }
+  .fs-img-big {
+    height: 180px;
+  }
+}
+@media (max-width: 985px) {
+  .property-card {
+    width: 200px;
+  }
+  .fs-img-big {
+    height: 150px;
+  }
+}
+@media (max-width: 985px) {
+  .property-card {
+    width: 200px;
+  }
+}
+@media (max-width: 865px) {
+  .property-card {
+    width: 175px;
+  }
+}
+@media (max-width: 865px) {
+  .property-card {
+    width: 150px;
+  }
+  .fs-img-big {
+    height: 125px;
+  }
+}
+@media (max-width: 660px) {
+  .forsale-cards{
+  grid-template-columns: repeat(2, 1fr);
+  }
+  .property-card {
+    width: 200px;
+  }
+  .fs-img-big {
+    height: 150px;
+  }
+}
+@media (max-width: 585px) {
+  .property-card {
+    width: 175px;
+  }
+  .fs-img-big {
+    height: 150px;
+  }
+}
+@media (max-width: 510px) {
+  .options {
+    flex: 1 25%;
+  }
+  .forsale-cards{
+    grid-template-columns: repeat(2, 1fr);
+    flex: 2 75%;
+    margin-bottom: 6%;
+    }
+  .property-card {
+    width: 125px;
+  }
+  .fs-img-big {
+    height: 100px;
+  }
+  .property-title{
+    font-size: 10px;
+  }
+  .property-town{
+    font-size: 9px;
+  }
+  .all-button, .price{
+    font-size: 15px;
+  }
+
+  .sort-button, .type-button, .sort-title, .type-title{
+    font-size: 10px;
+  }
+}
+
+
