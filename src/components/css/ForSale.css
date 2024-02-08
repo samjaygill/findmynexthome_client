@@ -2,7 +2,6 @@
   display: flex;
   min-height: 58vh;
   background-color: #dfe0e2;
-
 }
 .options {
   flex: 1 20%;
@@ -55,7 +54,7 @@
   font-weight: bold;
   background-color: white;
 }
-.property-town{
+.property-town {
   background-color: white;
   font-size: 14px;
   text-transform: uppercase;
@@ -66,7 +65,9 @@
   position: absolute right;
   text-align: end;
 }
-.all, .date-price, .property-type {
+.all,
+.date-price,
+.property-type {
   background-color: #3c6d7c;
   margin: 2.5%;
   padding-bottom: 5%;
@@ -82,7 +83,8 @@
   color: #3c6d7c;
   border: 2px solid #9fc5d1;
 }
-.sort-button, .type-button{
+.sort-button,
+.type-button {
   background-color: #dfe0e2;
   font-size: 15px;
   font-weight: bold;
@@ -93,7 +95,7 @@
   color: #3c6d7c;
   border: 2px solid #9fc5d1;
 }
-.selected-type{
+.selected-type {
   background-color: #dfe0e2;
   font-size: 15px;
   font-weight: bold;
@@ -104,12 +106,14 @@
   color: #284953;
   border: 3px solid #284953;
 }
-.sort-title, .type-title, .flex-box{
+.sort-title,
+.type-title,
+.flex-box {
   background-color: #3c6d7c;
-color: #dfe0e2;
-padding: 1%;
+  color: #dfe0e2;
+  padding: 1%;
 }
-.flex-box{
+.flex-box {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
 }

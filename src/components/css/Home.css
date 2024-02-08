@@ -15,7 +15,6 @@
   color: #071013;
   text-transform: none;
   padding-right: 5%;
-
 }
 .home-title {
   text-transform: uppercase;
@@ -34,13 +33,11 @@
   text-transform: uppercase;
   margin: 20px 0 0 0;
   color: #3c6d7c;
-
 }
 
 .line {
   height: 0.25px;
   background-color: #3c6d7c;
-
 }
 
 .choose-title {
@@ -51,7 +48,6 @@
   text-transform: uppercase;
   color: #3c6d7c;
   background-color: #dfe0e2;
-
 }
 
 .choose-us {
@@ -61,7 +57,6 @@
   gap: 10px;
   padding-bottom: 1%;
   background-color: #dfe0e2;
-
 }
 .why-us {
   background-color: #9fc5d1;
@@ -86,21 +81,20 @@
 .button-div {
   text-align: center;
   background-color: #dfe0e2;
-
 }
 .team-button {
   margin-bottom: 2.5%;
   text-transform: uppercase;
   background-color: #3c6d7c;
   padding: 10px 15px;
-  color: #DFE0E2;
+  color: #dfe0e2;
   font-weight: bold;
   font-size: 18px;
   border: none;
   cursor: pointer;
 }
 
-.team-button:hover{
-    background-color: #9fc5d1;
-    color: #3c6d7c ;
+.team-button:hover {
+  background-color: #9fc5d1;
+  color: #3c6d7c;
 }

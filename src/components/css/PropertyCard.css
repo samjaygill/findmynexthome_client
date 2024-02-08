@@ -1,7 +1,6 @@
 .pc-container {
   min-height: 61vh;
   background-color: #dfe0e2;
-
 }
 .enquire {
   padding: 0.5%;
@@ -39,7 +38,6 @@
   max-width: 95%;
   margin: 0 1%;
   border: 1px solid #3c6d7c;
-  /* padding: 5%; */
 }
 .pc-photos,
 .pc-info,
@@ -59,7 +57,6 @@
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     padding: 0 0 2.5% 0;
-
 }
 .pc-type{
     text-align: end;
@@ -68,11 +65,8 @@
 .pc-photos {
   flex: 1 50%;
   padding: 2%;
-
-  /* padding: 2.5% 0; */
 }
 .pc-info {
   flex: 2 50%;
   padding: 2%;
-
 }
