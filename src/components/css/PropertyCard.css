@@ -1,5 +1,7 @@
 .pc-container {
-  min-height: 49vh;
+  min-height: 61vh;
+  background-color: #dfe0e2;
+
 }
 .enquire {
   padding: 0.5%;
@@ -28,7 +30,7 @@
   padding: 0.5% 0.5%;
   background-color: white;
   display: flex;
-  margin-bottom: 2.5%;
+  margin-bottom: 2%;
   height: 100%;
 }
 .pc-image {
@@ -65,12 +67,12 @@
 }
 .pc-photos {
   flex: 1 50%;
-  padding: 2.5%;
+  padding: 2%;
 
   /* padding: 2.5% 0; */
 }
 .pc-info {
   flex: 2 50%;
-  padding: 2.5%;
+  padding: 2%;
 
 }
