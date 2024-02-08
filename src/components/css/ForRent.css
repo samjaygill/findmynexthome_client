@@ -11,3 +11,10 @@
   flex: 2 80%;
   justify-items: center;
 }
+
+@media (max-width: 1300px) {
+  .forrent-cards {
+    padding: 2% 2.5% 2.5% 2.5%;
+    gap: 2%;
+  }
+}
