@@ -155,15 +155,13 @@
 }
 @media (max-width: 865px) {
   .property-card {
-    width: 175px;
-  }
-}
-@media (max-width: 865px) {
-  .property-card {
     width: 150px;
   }
   .fs-img-big {
     height: 125px;
+  }
+  .all{
+    margin: 5% 0;
   }
 }
 @media (max-width: 660px) {
