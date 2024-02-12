@@ -22,3 +22,46 @@
   background-color: #dfe0e2;
 
 }
+@media (max-width: 1205px) {
+  .contact-img {
+    height: 300px;
+  }
+}
+@media (max-width: 626px) {
+  .contact-container{
+    padding: 0 5%;
+  }
+  .contact-img {
+    height: 230px;
+  }
+  .contact-card2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 530px) {
+  .contact-img {
+    height: 200px;
+  }
+}
+@media (max-width: 446px) {
+  .contact-container{
+    padding: 0 2.5%;
+  }
+  .contact-img {
+    height: 170px;
+  }
+  .contact-card2 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 376px) {
+  .contact-container{
+    padding: 0 2.5%;
+  }
+  .contact-img {
+    height: 130px;
+  }
+  .contact-card2 {
+    font-size: 11px;
+  }
+}
