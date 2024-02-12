@@ -108,23 +108,14 @@
 @media (max-width: 507px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    padding: 20px 40px;
+    gap: 20px;
+    padding: 20px 20px;
   }
   .heading{
-    padding: 20px 0 10px 40px
+    padding: 20px 0 5px 20px
   }
   .team-img {
-    height: 150px;
-  }
-}
-@media (max-width: 426px) {
-  .container {
-    gap: 20px;
-    padding: 20px;
-  }
-  .heading{
-    padding: 20px 0 10px 20px
+    height: 160px;
   }
 }
 @media (max-width: 385px) {
