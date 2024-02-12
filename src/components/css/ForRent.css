@@ -23,6 +23,9 @@
   .forrent-cards{
   grid-template-columns: repeat(2, 1fr);
   }
+  .forrent-container {
+    min-height: 63.5lvh;
+  }
 }
 @media (max-width: 510px) {
   .forrent-cards{

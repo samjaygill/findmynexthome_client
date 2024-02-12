@@ -176,6 +176,9 @@
   .fs-img-big {
     height: 150px;
   }
+  .forsale-container {
+    min-height: 63.5lvh;
+  }
 }
 @media (max-width: 585px) {
   .property-card {
