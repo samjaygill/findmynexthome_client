@@ -71,6 +71,9 @@
   flex: 2 50%;
   padding: 2%;
 }
+.fa{
+  background-color: white;
+}
 
 
 @media (max-width: 1205px) {

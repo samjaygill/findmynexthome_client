@@ -7,7 +7,7 @@ function Maps() {
     <div className="maps">
       <APIProvider apiKey={"AIzaSyACsLcYxQS-rk5VOg1AhgD5bzeRU2Hbijw"}>
         <Map
-          zoom={9}
+          zoom={13}
           center={{ lat: 55.610963923751164, lng: -4.498863903753501 }}
           onLoad={() => console.log("Map loaded")}
         >
