@@ -59,7 +59,7 @@ function PropertyCard({ properties }) {
             </div>
             {property.description}
 
-          
+          <h3 className="pc-price">£{property.price.toLocaleString("en-GB")}</h3>
         </div>
       </div>
     </div>

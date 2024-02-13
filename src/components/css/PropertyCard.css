@@ -74,6 +74,12 @@
 .fa{
   background-color: white;
 }
+.pc-price{
+  text-align: end;
+  font-size: 30px;
+  padding-top: 25%;
+  text-decoration: underline;
+}
 
 
 @media (max-width: 1205px) {
